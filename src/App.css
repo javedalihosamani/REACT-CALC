@@ -1,38 +1,59 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section>div{
+  border: 2px solid #ccc;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(0, 0, 0, 0.655);
+  border-radius: 5px;
+}
+section>div>h1{
+  color: #fff;
+  text-shadow: 1px 1px 1px #000 ;
+  margin-bottom: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section>div>input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  /* background-color: transparent; */
+  outline: none;
+  border: 2px solid transparent;
+  transition: 2s;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section>div>input:focus{
+  border: 2px solid #000;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button{
+  width: 100%;
+  padding: 20px 40px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10%;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+button:hover{
+  background-color: rgba(0, 0, 0, 0.64);
+  color: #fff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table, td{
+  border-collapse: collapse;
+  padding: 10px;
 }
